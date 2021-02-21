@@ -2,9 +2,11 @@
 title: Order
 ---
 <h1>Order</h1>
-<p class="editable">Order some tasty treats!  Send me some info about what you are looking for and we will get back to you.</p>
+<p class="editable">Order some tasty treats!
+	<br>
+	Send me some info about what you are looking for and we will get back to you.</p>
 
-<form method="post" action="{{ site.baseurl }}/contact-success/">
+<form method="post" action="{{ site.baseurl }}/order-success/">
 		<input type="hidden" name="_to" value="{{ site.data.email }}" />
 		<input type="text" name="_gotcha" style="display: none;">
 
@@ -15,11 +17,11 @@ title: Order
 		</div>
 
 		<div class="split">
-			<label for="subject">Menu</label>
-			<select id="subject" name="subject">
-				<option value="enquiry">Cake</option>
-				<option value="suggestion">Cookies</option>
-				<option value="press">Tacos</option>
+			<label for="menu">Menu</label>
+			<select id="menu" name="menu">
+				<option value="cake">Cake</option>
+				<option value="cookies">Cookies</option>
+				<option value="tacos">Tacos</option>
 				<option value="other">Other</option>
 			</select>
 		</div>
