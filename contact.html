@@ -1,23 +1,12 @@
 ---
-title: Contact
+title: Order
 ---
-<h1>Contact</h1>
-<p class="editable">Get in touch with any feedback or questions about the recipes featured here.</p>
+<h1>Order</h1>
+<p class="editable">Order some tasty treats!  Send me some info about what you are looking for and we will get back to you.</p>
 
 <form method="post" action="{{ site.baseurl }}/contact-success/">
 		<input type="hidden" name="_to" value="{{ site.data.email }}" />
 		<input type="text" name="_gotcha" style="display: none;">
-
-	<div class="contain">
-		<div class="split">
-			<label for="first-name">First Name</label>
-			<input type="text" name="first-name" id="first-name" />
-		</div>
-		<div class="split">
-			<label for="surname">Surname</label>
-			<input type="text" name="surname" id="surname" />
-		</div>
-	</div>
 
 	<div class="contain">
 		<div class="split">
@@ -26,18 +15,18 @@ title: Contact
 		</div>
 
 		<div class="split">
-			<label for="subject">Subject</label>
+			<label for="subject">Menu</label>
 			<select id="subject" name="subject">
-				<option value="enquiry">Enquiry</option>
-				<option value="suggestion">Suggestion</option>
-				<option value="press">Press</option>
+				<option value="enquiry">Cake</option>
+				<option value="suggestion">Cookies</option>
+				<option value="press">Tacos</option>
 				<option value="other">Other</option>
 			</select>
 		</div>
 	</div>
 
-	<label for="message">Message</label>
+	<label for="message">Tell us more about what you are looking for</label>
 	<textarea name="message" id="message"></textarea>
 
-	<input type="submit" value="Send Message" />
+	<input type="submit" value="Send Order" />
 </form>
